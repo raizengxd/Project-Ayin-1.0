@@ -7,12 +7,13 @@
 
 <body>
     <div class="mypanel"></div>
+    <p></p>
 
     <script>
     $.getJSON('https://corona.lmao.ninja/countries', function(data) {
         
         data.forEach(function(i){ 
-        console.log(i)
+         $("p").html("Hello <b>world!</b>",i);
     });
 
 
