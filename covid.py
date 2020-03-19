@@ -1,3 +1,4 @@
 
-import json,urllib.request
-print(dir(urllib))
+import requests
+r = requests.get('https://corona.lmao.ninja/countries')
+for i in range
