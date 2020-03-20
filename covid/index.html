@@ -38,11 +38,7 @@
    
 
     <script>
-    $.getJSON('https://corona.lmao.ninja/countries', function(data) {
-        
-
-        
-
+    $.getJSON('https://corona.lmao.ninja/countries', function(data) {      
         data.forEach(function(i){ 
          $(".list-country").append(`<div class="card-country">
             
@@ -58,12 +54,9 @@
             <b>Active:</b>${i.active}<br>
             <b>Critical:</b>${i.critical}<br>
             <b>Cases per Million:</b>${i.casesPerOneMillion}<br>
-            </div>
-            
+            </div>            
             <br>`);
     });
-
-
     });
     </script>
     
