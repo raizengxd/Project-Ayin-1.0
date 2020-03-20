@@ -7,13 +7,13 @@
 
 <body>
     <div class="mypanel"></div>
-    <p></p>
+    <ul></ul>
 
     <script>
-    $.getJSON('https://corona.lmao.ninja/countries', function(data) {
+    $.getJSON('https://corona.lmao.ninja/coun`a1aries', function(data) {
         
         data.forEach(function(i){ 
-         $("p").html("Hello <b>world!</b>",i);
+         $("ul").append('<li>'+i.country+'</li>');
     });
 
 
