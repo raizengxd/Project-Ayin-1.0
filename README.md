@@ -1,13 +1,12 @@
 # COVID Monitoring Cases 
-Contributor for design: Dennise Coleen Co 
-
+Contributor for design: denscovery
 # SCREENSHOT
 
 ## Ayin 1.3
 
 ![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-covid.PNG)
 
-## Ayin 1.5 - Design suggest by Dennise Co
+## Ayin 1.5
 
 ![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/s.gif)
 
