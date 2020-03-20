@@ -5,7 +5,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
 </head>
-
 <style>
 
     body{
@@ -38,70 +37,70 @@
         font-family: 'PT Mono', monospace;
     }
     .list-country{
-        flex-wrap: wrap;
+            flex-wrap: wrap;
     }
-  
+    
     .country-name{
 
-        font-weight:900;
-        font-size: 42pt;
-        padding-bottom: 1.5%;
-        
+            font-weight:900;
+            font-size: 42pt;
+            padding-bottom: 1.5%;
+            
 
-    }
+        }
     .card-country{
-        background-color: rgb(36, 35, 35);   
+            background-color: rgb(36, 35, 35);   
+            
+            padding-top:2.5%;
+            padding-bottom:2.5%;
+            padding-left:1%;
+            padding-right:1%;
         
-        padding-top:2.5%;
-        padding-bottom:2.5%;
-        padding-left:1%;
-        padding-right:1%;
-       
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
         
+        }
+        .title-name{
+            font-size: 4rem;
+            text-align: center;
+            padding: 2%;
+            font-weight: bolder;    }
+
+
+        p {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    
     
     }
-    .title-name{
-        font-size: 4rem;
-        text-align: center;
-        padding: 2%;
-        font-weight: bolder;    }
-
-
-    p {
-  border-right: solid 3px rgba(0,255,0,.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  
-  
-}
-.search-country{
-    padding-bottom:2% ;
-}
-.search-bar{
-    width:70%;
-   height: 50px;
-   font-family: 'PT Mono', monospace;
-}
+    .search-country{
+        padding-bottom:2% ;
+    }
+    .search-bar{
+        width:70%;
+    height: 50px;
+    font-family: 'PT Mono', monospace;
+    }
         /* Animation */
-      span,  p {
-        animation: animated-text 4s steps(29,end) 1s 1 normal both,
-                    animated-cursor 600ms steps(29,end) infinite;
-        }
+    span,  p {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+                animated-cursor 600ms steps(29,end) infinite;
+    }
 
-        /* text animation */
+    /* text animation */
 
-        @keyframes animated-text{
-        from{width: 0%;}
-        to{width: 100%;}
-        }
+    @keyframes animated-text{
+    from{width: 0%;}
+    to{width: 100%;}
+    }
 
-        /* cursor animations */
+    /* cursor animations */
 
-        @keyframes animated-cursor{
-        from{border-right-color: rgba(240, 94, 138, 0.75);}
-        to{border-right-color: transparent;}
-        }
+    @keyframes animated-cursor{
+    from{border-right-color: rgba(240, 94, 138, 0.75);}
+    to{border-right-color: transparent;}
+    }
 
 </style>
 <body>
