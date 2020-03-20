@@ -3,22 +3,30 @@
 <head>
 <title>JavaScript - read JSON from URL</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
 </head>
 
 <style>
+    body{
+        background-color: black;
+        color:white;
+        font-family: 'PT Mono', monospace;
+    }
     .list-country{
         flex-wrap: wrap;
     }
   
     .country-name{
 
-        font-weight: bold;
+        font-weight:900;
         font-size: 42pt;
+        padding-bottom: 1.5%;
         
 
     }
     .card-country{
-        background-color: #37badb;
+        background-color: rgb(36, 35, 35);      
+        
         padding-top:2.5%;
         padding-bottom:2.5%;
         padding-left:5%;
@@ -28,9 +36,17 @@
         
     
     }
+    .title-name{
+        font-size: 72pt;
+        text-align: center;
+        padding: 2%;
+    }
 
 </style>
 <body>
+    <div class="title-name">
+        COVID-19 CASE REPORT
+    </div>
     <div class="list-country">                
     </div>
   
