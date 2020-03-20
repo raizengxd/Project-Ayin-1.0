@@ -2,9 +2,14 @@
 Contributor for design: Dennise Coleen Co 
 
 # SCREENSHOT
-![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-code.PNG)
+
+## Ayin 1.3
+
 ![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-covid.PNG)
 
+## Ayin 1.5 - Design suggest by Dennise Co
+
+![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-covid-2.PNG)
 
 
 # API
@@ -20,3 +25,7 @@ https://corona.lmao.ninja/
 |  https://corona.lmao.ninja/countries/{country-name} | Returns data of a specific country |
 |  https://corona.lmao.ninja/states | Returns all United States of America and their Corona data |
 |  https://corona.lmao.ninja/jhucsse | Return data from the John Hopkins CSSE Data Repository (Provinces and such) |
+
+
+# CODE
+![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-code.PNG)
