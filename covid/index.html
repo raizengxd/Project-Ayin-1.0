@@ -68,22 +68,25 @@
         /* cursor animations */
 
         @keyframes animated-cursor{
-        from{border-right-color: rgba(0,255,0,.75);}
+        from{border-right-color: rgba(240, 94, 138, 0.75);}
         to{border-right-color: transparent;}
         }
 
 </style>
 <body>
+    <div class="search-country">
+        <input type="text">
+    </div>
     <div class="title-name">
         <p>COVID-19 CASE REPORT</p>
     </div>
     <div class="list-country">                
     </div>
-  
     
    
 
     <script>
+
     $.getJSON('https://corona.lmao.ninja/countries', function(data) {      
         data.forEach(function(i){ 
          $(".list-country").append(`<div class="card-country">
