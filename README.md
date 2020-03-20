@@ -1,5 +1,12 @@
 # COVID Monitoring Cases 
 Contributor for design: Dennise Coleen Co 
+
+# SCREENSHOT
+![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-code.PNG)
+![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/screenshot-covid.PNG)
+
+
+
 # API
 API for Current cases and more stuff about COVID-19 or the Novel Coronavirus Strain
 https://corona.lmao.ninja/
