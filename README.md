@@ -9,7 +9,7 @@ Contributor for design: Dennise Coleen Co
 
 ## Ayin 1.5 - Design suggest by Dennise Co
 
-![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/s.GIF)
+![code](https://github.com/raizengxd/Project-Ayin-1.0/blob/master/screenshots/s.gif)
 
 
 # API
