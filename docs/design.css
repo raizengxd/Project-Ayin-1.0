@@ -5,6 +5,15 @@ body{
     padding: 3%;
   
 }
+
+.country-name:hover {
+    color:#e67d7d;
+  }
+.details-highlight:hover{
+    color:#e67d7d;
+}
+
+
 .list-country{
     margin: .5vw;      
     display: -ms-flexbox;
@@ -71,6 +80,8 @@ body{
 height: 50px;
 font-family: 'PT Mono', monospace;
 }
+
+
 
 /* span,  p {
 animation: animated-text 4s steps(29,end) 1s 1 normal both,
