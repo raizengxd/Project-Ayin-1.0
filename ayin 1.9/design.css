@@ -109,6 +109,8 @@ to{width: 100%;}
 }
 
 
+
+
 @keyframes animated-cursor{
 from{border-right-color: rgba(240, 94, 138, 0.75);}
 to{border-right-color: transparent;}
