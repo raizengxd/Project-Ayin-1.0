@@ -1,11 +1,21 @@
+
+*{
+    color:white;
+    font-family: 'PT Mono', monospace;
+}
+.search-bar{
+    
+}
 body{
     margin:0;
 }
 .container{
-    padding: 3%;
+    padding: 10%;
   
 }
-
+.mob-design{
+    padding-left: 5%;
+}
 .country-name:hover {
     color:#e67d7d;
   }
@@ -27,7 +37,7 @@ body{
     -webkit-box-flex: auto;
     -ms-flex:auto;
     flex:auto;
-    width:50;
+    width:120;
     margin: 1vw;
     height: 100%;
 }
@@ -73,7 +83,7 @@ body{
 
 
 .search-country{
-    padding-bottom:2% ;
+    
 }
 .search-bar{
     width:70%;
