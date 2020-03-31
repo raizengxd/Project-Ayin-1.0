@@ -25,7 +25,7 @@
           
         <div style="width: 130%; height: 50px; border-radius: 15px; background-color: #363232; font-size:medium; padding-left: 8%; padding-top: 1%; padding-bottom: 1%;">
             <i class="fa fa-search icon"></i>
-              <input type="text" id="search-country" style="background-color: #363232; height:45px; border: none; padding-left: 5%; width: 80%;" placeholder="Search Country">
+              <input type="text" id="search" style="background-color: #363232; height:45px; border: none; padding-left: 5%; width: 80%;" placeholder="Search Country">
         </div>
         </div>
 
@@ -61,6 +61,41 @@
             </div>  
             <br>`);
     });
+    });
+
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            $('.list-country').html('');
+            var searchField = $('#search').val();
+            var expression = new RegExp(searchField,"i");
+            $.getJSON("https://corona.lmao.ninja/countries",function(data){
+                $.each(data,function(key,i){
+                    if(i.country.search(expression) !=-1){
+                        $(".list-country").append(`<div class="card-country">
+            
+            <div class="country-name">
+                ${i.country}
+                <hr>
+                
+            </div>
+            
+            <span class="details-highlight"><b>Cases:</b>${i.cases}<br><br></span>
+            
+            <span class="details-highlight"><b>Today Cases:</b>${i.todayCases}<br><br></span>
+            <span class="details-highlight"><b>Deaths:</b>${i.deaths}<br><br></span>
+            <span class="details-highlight"><b>Today Deaths:</b>${i.todayDeaths}<br><br></span>
+            <span class="details-highlight"><b>Recovered:</b>${i.recovered}<br><br></span>
+            <span class="details-highlight"><b>Active:</b>${i.active}<br><br></span>
+            <span class="details-highlight"><b>Critical:</b>${i.critical}<br><br></span>
+            <span class="details-highlight"> <b>Cases per Million:</b>${i.casesPerOneMillion}<br></span>
+            
+            </div>  
+            <br>`);
+                        
+                    }
+                });
+            });
+        });
     });
     </script>
     
