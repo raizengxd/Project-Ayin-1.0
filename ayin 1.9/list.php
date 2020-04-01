@@ -76,18 +76,20 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
        
         <a href="country.php?id=${i.country}">
          <div class="call-outs-container">
+         <div class="container">
          <div class="row">
-         
-             <div class="col-sm" style="font-size:200%; font-weight: bolder;">
+            
+                <div class="col-sm" style="font-size:200%; font-weight: bolder;">
              ${i.country}
             </div>
-            <div class="col-sm-2">
-             <div style="font-size: 150%; font-weight:bolder; padding-right:5%;">
+            <div class="col-sm-3">
+             <div style="font-size: 150%; font-weight:bolder;color:#e66b6b ">
              ${i.cases}
                 </div>
                 <div>
                 Total Cases
                 </div>
+            </div>
             </div>
         </div>
              </div>
@@ -108,26 +110,3 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
  
 </script>
 </html>
-<!-- 
-// <div class="call-outs-container">
-//         <div class="container">                          
-//           
-//                 <div class="country-name col-8" style="">
-                
-//                   ${i.country}
-
-//                   </div>
-                
-//               </div>
-
-              
-        
-//         </div>
-    
-        
-
-    
-//      </div>
-         
-         
-//           -->

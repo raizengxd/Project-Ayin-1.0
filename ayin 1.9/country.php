@@ -54,7 +54,9 @@
   <body>
     
     <div class="container">
-        
+        <div class="date-time" style="font-weight:bolder; margin-top:10%;"> 
+            As of <span id = "demo"></span>
+        </div>
        
         
     </div>
@@ -64,10 +66,15 @@
   
     
     <script>
-         
-    $.getJSON('https://corona.lmao.ninja/countries/philippines', function(i) {      
         
-        console.log(i)
+        var d = new Date();
+document.getElementById("demo").innerHTML = d;
+        var url_pass ="<?php echo $_GET['id']; ?>";
+        
+        var url= "https://corona.lmao.ninja/countries/" + url_pass;;
+    $.getJSON(url, function(i) {      
+        
+        console.log(i);
          $(".container").append(`
 
 
@@ -100,7 +107,7 @@
            <div class="data-card col" style="margin-right:1%;margin-top: 1%; " >
              
              <div class="data-digit" style="color:#8786e6" >
-                 150,000
+                 ${i.deaths}
              </div>
              <div class="data-desc">
                  Total of Death
@@ -109,7 +116,7 @@
              </div>
            <div class="data-card col" style="margin-top: 1%;">
             <div class="data-digit" style="color:#8786e6">
-             150,000
+             ${i.todayDeaths    }
          </div>
          <div class="data-desc">
              Today Death
@@ -123,18 +130,18 @@
          <div class="row" style="margin-top: 1%;">
              <div class="data-card col" style=  "margin-right:1%" >
                  <div class="data-digit">
-                     150,000
+                     ${i.active}
                  </div>
                  <div class="data-desc">
-                     Serious Case
+                     Active Case
                  </div> 
              </div>
              <div class="data-card col" >
                  <div class="data-digit" >
-                     150,000
+                     ${i.critical}
                  </div>
                  <div class="data-desc">
-                     Million Per Case
+                     Critical Case
                  </div> 
              </div>
              
@@ -143,7 +150,7 @@
            <div class="row" style="margin-top: 1%;">
              <div class="data-card col" >
                  <div class="data-digit" style="color:#6be771">
-                     150,000
+                     ${i.recovered}
                  </div>
                  <div class="data-desc">
                      Number of Recovered
