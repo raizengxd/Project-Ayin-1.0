@@ -10,6 +10,11 @@
     *{
         color: white;
     }
+
+    .x{
+        padding-left: 10%;
+        padding-right:10%;
+        }
     body{
         background-color: black;
     }
@@ -68,6 +73,7 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
         data.forEach(function(i){ 
             console.log(i.name)
          $(".x").append(`
+       
         <a href="country.html">
          <div class="call-outs-container">
          <div class="row">
@@ -76,7 +82,7 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
              ${i.country}
             </div>
             <div class="col-sm-2">
-             <div style="font-size: 150%; font-weight:bolder;">
+             <div style="font-size: 150%; font-weight:bolder; padding-right:5%;">
              ${i.cases}
                 </div>
                 <div>
@@ -85,6 +91,7 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
             </div>
         </div>
              </div>
+        
             </a>`
      
          
