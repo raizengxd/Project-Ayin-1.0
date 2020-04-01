@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
@@ -14,12 +15,14 @@
     }
     .call-outs-container{            
     background-color: #3a3939;        
-    padding-top:2%;
-    padding-bottom:2.5%;
-    padding-left:5%;
+    padding-top:3.5%;
+    padding-bottom:3.5%;
+    padding-left:8%;
     padding-right:5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    
     }
     .call-out{
         background-color: rgb(0, 0, 0);
@@ -29,6 +32,7 @@
         padding-top: 3%;
         padding-bottom: 3%;
         border-radius: 7px;
+      
     }
     .data-digit{
         text-align: center;
@@ -48,37 +52,75 @@
 </style>
 </head>
 <body>
-    <div class="container">
-    <div class="call-outs-container">
-        <div class="container">                          
     
-             
-                 
-               <div class="row" style="margin-top: 1%;">
-                <div class="data-card col-1" >
-                    <div class="data-digit" style="color:#6be771">
-                        150,000
-                    </div>
-                    <div class="data-desc">
-                        Number of Recovered
-                    </div> 
-   
-                </div> 
-                <div class="data-card col-2" >
-                     <div class="data-digit" style="color:#6be771">
-                         150,000
-                     </div>
-                     <div class="data-desc">
-                         Number of Recovered
-                     </div> 
+    <div class="x">
     
-                 </div>
-                 
-               </div>
-         </div>
-    
-     </div>
+
+
+     
 
     </div>
 </body>
+
+<script>
+
+$.getJSON('https://corona.lmao.ninja/countries', function(data) {      
+        data.forEach(function(i){ 
+            console.log(i.name)
+         $(".x").append(`
+        <a href="country.html">
+         <div class="call-outs-container">
+         <div class="row">
+         
+             <div class="col-sm" style="font-size:200%; font-weight: bolder;">
+             ${i.country}
+            </div>
+            <div class="col-sm-2">
+             <div style="font-size: 150%; font-weight:bolder;">
+             ${i.cases}
+                </div>
+                <div>
+                Total Cases
+                </div>
+            </div>
+        </div>
+             </div>
+            </a>`
+     
+         
+
+);
+    });
+    });
+
+
+
+
+
+
+ 
+</script>
 </html>
+<!-- 
+// <div class="call-outs-container">
+//         <div class="container">                          
+//           
+//                 <div class="country-name col-8" style="">
+                
+//                   ${i.country}
+
+//                   </div>
+                
+//               </div>
+
+              
+        
+//         </div>
+    
+        
+
+    
+//      </div>
+         
+         
+//           -->
