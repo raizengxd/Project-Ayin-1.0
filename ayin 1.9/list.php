@@ -71,10 +71,10 @@
 
 $.getJSON('https://corona.lmao.ninja/countries', function(data) {      
         data.forEach(function(i){ 
-            console.log(i.name)
+            console.log(i)
          $(".x").append(`
        
-        <a href="country.html">
+        <a href="country.php?id=${i.country}">
          <div class="call-outs-container">
          <div class="row">
          
