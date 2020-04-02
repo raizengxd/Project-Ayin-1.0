@@ -88,18 +88,62 @@ height: 50px;
     color:white;
 }
 .nav-br{
-    background-color: #363232;
+    background-color: ;
     padding-top:3em;
     padding-bottom:3em;
 }
 
+
+
+.name-title{
+    text-align: center;
+}
     
+.my-head{
+            padding-top:3%;
+            padding-bottom:3%;
+            background-color:#363232;
+           
+            color:#fff;
+            
+
+        }
+        
+
 </style>
 </head>
 <body>
-   <div class="nav-br">
+    
+    <div class="my-head">
+    <div class="headnav" style="text-align: right;">
+           
 
-   </div>
+            <a href="gallery.html" style="padding-left: 5%;  color:white;  text-decoration: none;">
+                <i class="fa fa-globe"></i>&nbsp;&nbsp;
+                World Statistics</a>
+            <a href= "list.php" style="padding-left: 5%;  color:white;  text-decoration: none;">
+                <i class="fa fa-search"></i>&nbsp;&nbsp;
+                Search Country</a>
+            <a href="resume.html" style="padding-right: 5%; padding-left: 5%;  color:white;  text-decoration: none;">
+                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;
+                PH</a>
+        </div>             
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="page">
     
     <div class="x-1">
