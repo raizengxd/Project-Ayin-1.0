@@ -48,10 +48,18 @@
             font-size:200%;
             font-weight: bolder;
         }
+        .nav-br{
+    background-color: #363232;
+    padding-top:3em;
+    padding-bottom:3em;
+}
         
     </style>
   </head>
   <body>
+  <div class="nav-br">
+
+   </div>
     
     <div class="container">
         <div class="date-time" style="font-weight:bolder; margin-top:10%;"> 

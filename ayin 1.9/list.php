@@ -13,15 +13,24 @@
         color: white;
     }
 
-    .x{
+    .x-1{
         padding-left: 10%;
         padding-right:10%;
+        padding-top:6%;
+        
+        }
+
+    .x{
+        
+        padding-left: 10%;
+        padding-right:10%;
+        padding-top:6%;
         }
     body{
         background-color: black;
     }
     .call-outs-container{            
-    background-color: #3a3939;        
+    background-color: #363232;        
     padding-top:3.5%;
     padding-bottom:3.5%;
     padding-left:8%;
@@ -71,28 +80,35 @@
     }
     .search-bar{
     width:77%;
-height: 55px;
+height: 50px;
 
 }
 .comp{
     padding:10%;
     color:white;
 }
+.nav-br{
+    background-color: #363232;
+    padding-top:3em;
+    padding-bottom:3em;
+}
 
     
 </style>
 </head>
 <body>
+   <div class="nav-br">
+
+   </div>
     <div class="page">
     
-    <div class="global-report">
-
-    </div>
+    <div class="x-1">
     <div class="search-bar">
-    <div style="width: 130%; height: 55px; border-radius: 15px; background-color: #363232; font-size:medium; padding-left: 8%; padding-top: 1%; padding-bottom: 0%;">
+    <div style="width: 130%; height: 60px; border-radius: 15px; background-color: #363232; font-size:medium; padding-left: 8%; padding-top: 1%; padding-bottom: 4%;">
             <i class="fa fa-search icon"></i>
-            <input type="text" id="search" style="background-color: #363232; height:45px; border: none; padding-left: 5%; width: 80%;" placeholder="Search Country">
+            <input type="text" id="search" style="font-size:150%; background-color: #363232; height:45px; border: none; padding-left: 5%; width: 80%;" placeholder="Search Country">
     </div>   
+    </div>
     </div>
     <div class="x">
     
