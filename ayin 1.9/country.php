@@ -53,7 +53,7 @@
   </head>
   <body>
 
-	   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #3a3939;">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #3a3939;">
         <a class="navbar-brand" href="#" style="font-weight: bolder;">    COVID-19 REPORT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -62,13 +62,13 @@
               <ul class="navbar-nav ml-auto" >
                 <li class="nav-item active" >
                   
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="index.php">
                     <i class="fa fa-globe" style="color: white; "></i>
                     World statistics <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   
-                  <a class="nav-link" href="New Folder/" >
+                  <a class="nav-link" href="list.php" >
                     <i class="fa fa-search" style="color: white;"></i>
                     Search Country<span class="sr-only">(current)</span></a>
                 </li>
@@ -83,6 +83,7 @@
              
             </div>           
     </nav>
+ 
  
     <div style="margin-bottom: 40px;
 	 margin-top:40px;"

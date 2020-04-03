@@ -179,7 +179,12 @@ height: 50px;
     
     </div>
 </div>
+
+<script>window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
+            <script src="popper.min.js"></script>
+            <script src="bootstrap.min.js"></script>
 </body>
+
 
 <script>
 
