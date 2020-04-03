@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <script src="jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,50 +48,45 @@
             font-size:200%;
             font-weight: bolder;
         }
+        .nav-br{
+    background-color: #363232;
+    padding-top:3em;
+    padding-bottom:3em;
+}
+.my-head{
+            padding-top:3%;
+            padding-bottom:3%;
+            background-color:#363232;
+           
+            color:#fff;
+            
+
+        }
+        
         
     </style>
   </head>
   <body>
 
-	   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f2e40;">
-        <a class="navbar-brand" href="#">    @raizengxd</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ml-auto" >
-                <li class="nav-item active">
-                  
-                  <a class="nav-link" href="#" >
-                    <i class="fa fa-home" style="color: white;"></i>
-                    Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  
-                  <a class="nav-link" href="New Folder/">
-                    <i class="fa fa-rocket  " style="color: white;"></i>
-                    Projects<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  
-                  <a class="nav-link" href="#">
-                    <i class="fa fa-user" style="color: white;"></i>
-                    About me<span class="sr-only">(current)</span></a>
-                </li>
-              
-              </ul>
-             
-            </div>           
-    </nav>
- 
-    <div style="margin-bottom: 40px;
-	 margin-top:40px;"
-	
-	> &nbsp;
-	</div>
+  <div class="my-head">
+    <div class="headnav" style="text-align: right;">
+           
+
+            <a href="gallery.html" style="padding-left: 5%;  color:white;  text-decoration: none;">
+                <i class="fa fa-globe"></i>&nbsp;&nbsp;
+                World Statistics</a>
+            <a href= "list.php" style="padding-left: 5%;  color:white;  text-decoration: none;">
+                <i class="fa fa-search"></i>&nbsp;&nbsp;
+                Search Country</a>
+            <a href="resume.html" style="padding-right: 5%; padding-left: 5%;  color:white;  text-decoration: none;">
+                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;
+                PH</a>
+        </div>             
+
+    </div>
+    
     <div class="container">
-	
-	<div class="date-time" style="font-weight:bolder; margin-top:10%;"> 
+        <div class="date-time" style="font-weight:bolder; margin-top:10%;"> 
             As of <span id = "demo"></span>
         </div>
        
@@ -102,25 +97,19 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   
     
-    
-            <script>window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
-            <script src="popper.min.js"></script>
-            <script src="bootstrap.min.js"></script>
-            
-
-	
     <script>
-
-            
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
-        var url_pass ="<?php echo $_GET['id']; ?>";
         
-        var url= "https://corona.lmao.ninja/countries/" + url_pass;;
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d;
+      
+        
+        var url= "https://corona.lmao.ninja/all";
     $.getJSON(url, function(i) {      
         
         console.log(i);
          $(".container").append(`
+
+
          <div class="call-outs-container">
     <div class="container">
                         <div class="row">
@@ -169,6 +158,7 @@ document.getElementById("demo").innerHTML = d;
          </div>
            
          </div>
+
          <div class="row" style="margin-top: 1%;">
              <div class="data-card col" style=  "margin-right:1%" >
                  <div class="data-digit">
@@ -197,17 +187,37 @@ document.getElementById("demo").innerHTML = d;
                  <div class="data-desc">
                      Number of Recovered
                  </div> 
+
              </div>
              
            </div>
      </div>
+
  </div>
- 
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
          
          
          `);
     
     });
+
 
 
     </script>

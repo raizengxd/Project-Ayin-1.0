@@ -118,10 +118,10 @@ height: 50px;
     <div class="headnav" style="text-align: right;">
            
 
-            <a href="gallery.html" style="padding-left: 5%;  color:white;  text-decoration: none;">
+            <a href="index.php" style="padding-left: 5%;  color:white;  text-decoration: none;">
                 <i class="fa fa-globe"></i>&nbsp;&nbsp;
                 World Statistics</a>
-            <a href= "list.php" style="padding-left: 5%;  color:white;  text-decoration: none;">
+            <a href= "#" style="padding-left: 5%;  color:white;  text-decoration: none;">
                 <i class="fa fa-search"></i>&nbsp;&nbsp;
                 Search Country</a>
             <a href="resume.html" style="padding-right: 5%; padding-left: 5%;  color:white;  text-decoration: none;">
