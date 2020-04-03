@@ -113,23 +113,44 @@ height: 50px;
 </style>
 </head>
 <body>
-    
-    <div class="my-head">
-    <div class="headnav" style="text-align: right;">
-           
+ 
 
-            <a href="index.php" style="padding-left: 5%;  color:white;  text-decoration: none;">
-                <i class="fa fa-globe"></i>&nbsp;&nbsp;
-                World Statistics</a>
-            <a href= "#" style="padding-left: 5%;  color:white;  text-decoration: none;">
-                <i class="fa fa-search"></i>&nbsp;&nbsp;
-                Search Country</a>
-            <a href="resume.html" style="padding-right: 5%; padding-left: 5%;  color:white;  text-decoration: none;">
-                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;
-                PH</a>
-        </div>             
-
-    </div>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #3a3939;">
+        <a class="navbar-brand" href="#" style="font-weight: bolder;">    COVID-19 REPORT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto" >
+                <li class="nav-item active" >
+                  
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-globe" style="color: white; "></i>
+                    World statistics <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  
+                  <a class="nav-link" href="New Folder/" >
+                    <i class="fa fa-search" style="color: white;"></i>
+                    Search Country<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-map-marker" style="color: white;"></i>
+                    PH<span class="sr-only">(current)</span></a>
+                </li>
+              
+              </ul>
+             
+            </div>           
+    </nav>
+ 
+    <div style="margin-bottom: 40px;
+	 margin-top:40px;"
+	
+	> &nbsp;
+	</div>
 
 
 

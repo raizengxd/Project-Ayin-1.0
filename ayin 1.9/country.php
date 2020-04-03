@@ -53,30 +53,30 @@
   </head>
   <body>
 
-	   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f2e40;">
-        <a class="navbar-brand" href="#">    @raizengxd</a>
+	   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #3a3939;">
+        <a class="navbar-brand" href="#" style="font-weight: bolder;">    COVID-19 REPORT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ml-auto" >
-                <li class="nav-item active">
+                <li class="nav-item active" >
                   
-                  <a class="nav-link" href="#" >
-                    <i class="fa fa-home" style="color: white;"></i>
-                    Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-globe" style="color: white; "></i>
+                    World statistics <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   
-                  <a class="nav-link" href="New Folder/">
-                    <i class="fa fa-rocket  " style="color: white;"></i>
-                    Projects<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="New Folder/" >
+                    <i class="fa fa-search" style="color: white;"></i>
+                    Search Country<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   
                   <a class="nav-link" href="#">
-                    <i class="fa fa-user" style="color: white;"></i>
-                    About me<span class="sr-only">(current)</span></a>
+                    <i class="fa fa-map-marker" style="color: white;"></i>
+                    PH<span class="sr-only">(current)</span></a>
                 </li>
               
               </ul>
