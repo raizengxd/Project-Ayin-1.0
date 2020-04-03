@@ -148,7 +148,7 @@
              </div>
            <div class="data-card col" style="margin-top: 1%;">
             <div class="data-digit" style="color:#8786e6">
-             ${i.todayDeaths    }
+             ${i.todayDeaths}
          </div>
          <div class="data-desc">
              Today Death
