@@ -109,6 +109,9 @@ height: 50px;
             
 
         }
+.des{
+    text-align:center; padding-top:50px;
+}
         
 
 </style>
@@ -160,7 +163,9 @@ height: 50px;
 
 
 
-
+    <div class="label-title" style="font-size:8vh; font-weight:bolder;padding-top:30px; padding-left:10%; padding-right:10%; text-align:center;" >
+        LIST OF AFFECTED COUNTRY
+    </div>
 
 
 
@@ -177,6 +182,12 @@ height: 50px;
     </div>
     </div>
         
+    <div class="des" style="" id="whatever2"  >
+    <div id ="whatever" class="spinner-border white " style="" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
 
     <div class="x">
     
@@ -222,6 +233,8 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
             );
             console.log("DOONEEE!!!! ")
         });
+        document.getElementById("whatever").className = "A";
+        document.getElementById("whatever2").className = "AA";
         });
 
      $(document).ready(function(){

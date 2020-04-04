@@ -92,8 +92,8 @@
 	</div>
     <div class="container">
 	
-	<div class="date-time" style="font-weight:bolder; margin-top:10%;"> 
-            As of <span id = "demo"></span>
+	<div class="date-time" style="font-weight:bolder; margin-top:10%; font-size: 6vh; text-align:center;"> 
+          PATIENT INFORMATION
         </div>
        
         
@@ -113,8 +113,7 @@
     <script>
 
             
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
+
 var url_pass ="<?php echo $_GET['id']; ?>";
         
         var url= "https://coronavirus-ph-api.herokuapp.com/cases";
