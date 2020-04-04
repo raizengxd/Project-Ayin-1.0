@@ -150,7 +150,7 @@ height: 50px;
     <div style="margin-bottom: 40px;
 	 margin-top:40px;"
 	
-	> &nbsp;
+	> 
 	</div>
 
 
@@ -164,7 +164,9 @@ height: 50px;
 
 
 
-
+    <div class="label-title" style="font-size:8vh; font-weight:bolder;padding-top:30px; padding-left:10%; padding-right:10%; text-align:center;" >
+        LIST OF PATIENT IN PHILIPPINES
+    </div>
 
     <div class="page">
     
@@ -176,7 +178,7 @@ height: 50px;
     </div>   
     </div>
     <div style="text-align:center; padding-top:50px;"  >
-    <div id ="whatever" class="spinner-border text-success" role="status">
+    <div id ="whatever" class="spinner-border white " style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
