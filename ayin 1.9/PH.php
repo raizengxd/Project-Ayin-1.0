@@ -131,7 +131,7 @@ height: 50px;
                 </li>
                 <li class="nav-item active">
                   
-                  <a class="nav-link" href="#" >
+                  <a class="nav-link" href="list.php" >
                     <i class="fa fa-search" style="color: white;"></i>
                     Search Country<span class="sr-only">(current)</span></a>
                 </li>
@@ -197,7 +197,7 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
          $(".x").append(`
        
        
-         <a href="PH.php?id=${i.case_no}">
+         <a href="patient.php?id=${i.case_no}">
          <div class="call-outs-container">
          <div class="container">
          <div class="row">
@@ -248,7 +248,7 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
                             `
        
        
-       <a href="PH.php?id=${i.case_no}">
+       <a href="patient.php?id=${i.case_no}">
        <div class="call-outs-container">
        <div class="container">
        <div class="row">

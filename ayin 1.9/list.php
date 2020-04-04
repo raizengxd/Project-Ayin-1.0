@@ -137,7 +137,7 @@ height: 50px;
                 </li>
                 <li class="nav-item active">
                   
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="PH.php">
                     <i class="fa fa-map-marker" style="color: white;"></i>
                     PH<span class="sr-only">(current)</span></a>
                 </li>
