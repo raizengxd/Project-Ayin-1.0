@@ -34,9 +34,10 @@
     padding-top:3.5%;
     padding-bottom:3.5%;
     padding-left:8%;
-    padding-right:5%;
+    padding-right:10%;
     margin-top: 2%;
     margin-bottom: 2%;
+    
     border-radius: 10px;
     
     }
@@ -201,9 +202,9 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
                 <div class="col-sm" style="font-size:200%; font-weight: bolder;">
              ${i.country}
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3" style="padding-right:51px">
              <div style="font-size: 150%; font-weight:bolder;color:#e66b6b ">
-             ${i.cases}
+             ${i.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                 </div>
                 <div>
                 Total Cases
@@ -243,7 +244,7 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
             </div>
             <div class="col-sm-3">
              <div style="font-size: 150%; font-weight:bolder;color:#e66b6b ">
-             ${i.cases}
+             ${i.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                 </div>
                 <div>
                 Total Cases

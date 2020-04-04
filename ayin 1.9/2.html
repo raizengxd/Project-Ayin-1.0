@@ -120,57 +120,10 @@
         <div class="date-time" style="font-weight:bolder; margin-top:3%; text-align: center;"> 
             As of <span id = "demo"></span>
         </div>
-
-
-
-        
        
 
-        <div class="all-data" style="text-align: center; font-size: large;">
-            <!-- total case-->
-            <div class="row perCase">               
-                <div class="col" >
-                    <div style="font-size:48pt" class="number-datax">${i.cases}</div>
-                    Total Case
-                </div>
-            </div>
- 
-             <!-- death-->
-             <div class="row perCase">               
-                <div class="col" >
-                    <div style="font-size:48pt" class="number-datax">${i.deaths}</div>
-                    Total Death
-                </div>
-            </div>
-            
-             <!-- total recovered-->
-             <div class="row perCase">               
-                <div class="col" >
-                    <div style="font-size:48pt" class="number-datax">${i.recovered}</div>
-                    Recovered
-                </div>
-            </div>
- 
-             <!-- total case-->
-             <div class="row perCase">               
-                <div class="col" >
-                    <div style="font-size:48pt" class="number-datax">${i.active}</div>
-                    Active Case
-                </div>
-            </div>
-
-            <!-- total case-->
-            <a href="list.php">
-                <div class="row perCase">               
-               <div class="col" >
-                   <div style="font-size:48pt" class="number-datax" id="value"></div>
-                   Affected Countries
-               </div>
-           </div>
-       </a>
- 
-       </div>
-       
+        <!-- total case-->
+             
         
     </div>
 
@@ -193,26 +146,84 @@
         //{"cases":1098434,"deaths":59160,"recovered":228923,"updated":1585967492240,"active":810351,"affectedCountries":207}
 
         var url= "https://corona.lmao.ninja/all";
+        
+
     $.getJSON(url, function(i) {      
         
         console.log(i);
-        document.getElementById("value").innerHTML = i.cases;
+         $(".container").append(`     
+
+        <div class="all-data" style="text-align: center; font-size: large;">
+             <!-- total case-->
+            <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${(i.cases).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Total Case
+                </div>
+            </div>
+
+             <!-- death-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${i.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Total Death
+                </div>
+            </div>
+            
+             <!-- total recovered-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${i.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Recovered
+                </div>
+            </div>
+
+             <!-- total case-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${i.active.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Active Case
+                </div>
+            </div>
+
+             <!-- total case-->
+             <a href="list.php">
+                 <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax" id="value">${i.affectedCountries.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Affected Countries
+                </div>
+            </div>
+        </a>
+  
+        </div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         `);
     
     });
 
     
-    $('.number-datax').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            
-            $(this).text(Math.ceil(now));
-        }
-    });
-    });
+            $('.number-datax').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
 
 
     </script>

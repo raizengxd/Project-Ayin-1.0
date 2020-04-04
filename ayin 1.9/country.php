@@ -127,11 +127,11 @@ document.getElementById("demo").innerHTML = d;
                         <div class="row">
            <div class="country-name col-8" style="padding-top:1%;">
              <i class="fa fa-map-marker" style="font-size:48px; color:#e66b6b"></i>
-             ${i.country}
+             ${i.country.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
              </div>
            <div class="col-4" style="padding-top:1%;">
              <div class="data-digit" style="text-align: right; color: #fabd4c;">
-                 ${i.todayCases}
+                 ${i.todayCases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
              </div>
              <div class="data-desc" style="text-align: right;">                       
                  Today Case
@@ -142,7 +142,7 @@ document.getElementById("demo").innerHTML = d;
          <div class="row" style="margin-top: 1%;">
            <div class="data-card col" style=  "margin-right:1%; margin-top: 1%;" >
              <div class="data-digit" style="color: #fabd4c;">
-                 ${i.cases}
+                 ${i.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
              </div>
              <div class="data-desc" >
                  Total Case
@@ -151,7 +151,7 @@ document.getElementById("demo").innerHTML = d;
            <div class="data-card col" style="margin-right:1%;margin-top: 1%; " >
              
              <div class="data-digit" style="color:#8786e6" >
-                 ${i.deaths}
+                 ${i.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
              </div>
              <div class="data-desc">
                  Total of Death
@@ -160,7 +160,7 @@ document.getElementById("demo").innerHTML = d;
              </div>
            <div class="data-card col" style="margin-top: 1%;">
             <div class="data-digit" style="color:#8786e6">
-             ${i.todayDeaths    }
+             ${i.todayDeaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")    }
          </div>
          <div class="data-desc">
              Today Death
@@ -173,7 +173,7 @@ document.getElementById("demo").innerHTML = d;
          <div class="row" style="margin-top: 1%;">
              <div class="data-card col" style=  "margin-right:1%" >
                  <div class="data-digit">
-                     ${i.active}
+                     ${i.active.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                  </div>
                  <div class="data-desc">
                      Active Case
@@ -181,7 +181,7 @@ document.getElementById("demo").innerHTML = d;
              </div>
              <div class="data-card col" >
                  <div class="data-digit" >
-                     ${i.critical}
+                     ${i.critical.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                  </div>
                  <div class="data-desc">
                      Critical Case
