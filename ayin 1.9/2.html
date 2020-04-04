@@ -66,6 +66,9 @@
     margin-top:30px;
     margin-bottom: 30px;
 }
+.number-datax{
+    font-weight: 500;
+}
         
         
     </style>
@@ -113,29 +116,60 @@
        <div class="title-world" style="margin-top: 5%; font-size:52pt; font-weight: bolder; text-align: center;">
             WORLD STATISTICS
         </div> 
-        <div class="date-time" style="font-weight:bolder; margin-top:3%;"> 
+        <div class="date-time" style="font-weight:bolder; margin-top:3%; text-align: center;"> 
             As of <span id = "demo"></span>
         </div>
        
 
-        <div class="all-data" style="text-align: center;">
-
-            <div class="row perCase">
-                
+        <div class="all-data" style="text-align: center; font-size: large;">
+             <!-- total case-->
+            <div class="row perCase">               
                 <div class="col" >
-                    <div style="font-size:48pt;">100</div>
-                    TOTAL CASE
+                    <div style="font-size:48pt" class="number-datax">100</div>
+                    Total Case
                 </div>
             </div>
 
-            <div class="row perCase">           
-                
-
+             <!-- death-->
+             <div class="row perCase">               
                 <div class="col" >
-                    <div style="font-size:48pt;">100</div>
-                    AFFECTED COUNTRIES
+                    <div style="font-size:48pt" class="number-datax">100</div>
+                    Total Death
                 </div>
             </div>
+            
+             <!-- total recovered-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">100</div>
+                    Recovered
+                </div>
+            </div>
+
+             <!-- total case-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">100</div>
+                    Active Case
+                </div>
+            </div>
+
+             <!-- total case-->
+             <a href="list.php">
+                 <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">100</div>
+                    Affected Countries
+                </div>
+            </div>
+        </a>
+
+            
+            
+            
+            
+
+           
 
             
 
