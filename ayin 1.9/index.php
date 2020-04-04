@@ -62,6 +62,13 @@
             
 
         }
+.perCase{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.number-datax{
+    font-weight: 500;
+}
         
         
     </style>
@@ -106,10 +113,17 @@
 	</div>
 
     <div class="container">
-        <div class="date-time" style="font-weight:bolder; margin-top:10%;"> 
+        
+        <div class="title-world" style="margin-top: 5%; font-size:52pt; font-weight: bolder; text-align: center;">
+            WORLD STATISTICS
+        </div> 
+        <div class="date-time" style="font-weight:bolder; margin-top:3%; text-align: center;"> 
             As of <span id = "demo"></span>
         </div>
        
+
+        <!-- total case-->
+             
         
     </div>
 
@@ -123,111 +137,66 @@
             
 
     <script>
+
+        
         
         var d = new Date();
         document.getElementById("demo").innerHTML = d;
       
-        
+        //{"cases":1098434,"deaths":59160,"recovered":228923,"updated":1585967492240,"active":810351,"affectedCountries":207}
+
         var url= "https://corona.lmao.ninja/all";
+        
+
     $.getJSON(url, function(i) {      
         
         console.log(i);
-         $(".container").append(`
+         $(".container").append(`     
 
+        <div class="all-data" style="text-align: center; font-size: large;">
+             <!-- total case-->
+            <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${(i.cases).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Total Case
+                </div>
+            </div>
 
-         <div class="call-outs-container">
-    <div class="container">
-                        <div class="row">
-           <div class="country-name col-8" style="padding-top:1%;">
-             <i class="fa fa-map-marker" style="font-size:48px; color:#e66b6b"></i>
-             ${i.country}
-             </div>
-           <div class="col-4" style="padding-top:1%;">
-             <div class="data-digit" style="text-align: right; color: #fabd4c;">
-                 ${i.todayCases}
-             </div>
-             <div class="data-desc" style="text-align: right;">                       
-                 Today Case
-             </div>  
-             </div>
-           
-         </div>
-         <div class="row" style="margin-top: 1%;">
-           <div class="data-card col" style=  "margin-right:1%; margin-top: 1%;" >
-             <div class="data-digit" style="color: #fabd4c;">
-                 ${i.cases}
-             </div>
-             <div class="data-desc" >
-                 Total Case
-             </div>    
-         </div>
-           <div class="data-card col" style="margin-right:1%;margin-top: 1%; " >
-             
-             <div class="data-digit" style="color:#8786e6" >
-                 ${i.deaths}
-             </div>
-             <div class="data-desc">
-                 Total of Death
-             </div> 
-             
-             </div>
-           <div class="data-card col" style="margin-top: 1%;">
-            <div class="data-digit" style="color:#8786e6">
-             ${i.todayDeaths}
-         </div>
-         <div class="data-desc">
-             Today Death
-         </div> 
-         
-         
-         </div>
-           
-         </div>
+             <!-- death-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${i.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Total Death
+                </div>
+            </div>
+            
+             <!-- total recovered-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${i.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Recovered
+                </div>
+            </div>
 
-         <div class="row" style="margin-top: 1%;">
-             <div class="data-card col" style=  "margin-right:1%" >
-                 <div class="data-digit">
-                     ${i.active}
-                 </div>
-                 <div class="data-desc">
-                     Active Case
-                 </div> 
-             </div>
-             <div class="data-card col" >
-                 <div class="data-digit" >
-                     ${i.critical}
-                 </div>
-                 <div class="data-desc">
-                     Critical Case
-                 </div> 
-             </div>
-             
-           </div>
-           
-           <div class="row" style="margin-top: 1%;">
-             <div class="data-card col" >
-                 <div class="data-digit" style="color:#6be771">
-                     ${i.recovered}
-                 </div>
-                 <div class="data-desc">
-                     Number of Recovered
-                 </div> 
+             <!-- total case-->
+             <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax">${i.active.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Active Case
+                </div>
+            </div>
 
-             </div>
-             
-           </div>
-     </div>
-
- </div>
-         
-         
-         
-         
-         
-         
-         
-         
-         
+             <!-- total case-->
+             <a href="list.php">
+                 <div class="row perCase">               
+                <div class="col" >
+                    <div style="font-size:48pt" class="number-datax" id="value">${i.affectedCountries.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    Affected Countries
+                </div>
+            </div>
+        </a>
+  
+        </div>
          
          
          
@@ -243,6 +212,22 @@
     
     });
 
+    
+            $('.number-datax').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+
+    </script>
+    <script>
 
 
     </script>

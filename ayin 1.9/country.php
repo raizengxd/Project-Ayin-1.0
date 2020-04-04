@@ -193,7 +193,7 @@ document.getElementById("demo").innerHTML = d;
            <div class="row" style="margin-top: 1%;">
              <div class="data-card col" >
                  <div class="data-digit" style="color:#6be771">
-                     ${i.recovered}
+                     ${i.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                  </div>
                  <div class="data-desc">
                      Number of Recovered
