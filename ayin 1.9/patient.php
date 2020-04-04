@@ -1,5 +1,5 @@
 <?php 
 
-$x= $_GET['patient'];
+$x= $_GET['id'];
 echo $x;
 ?>

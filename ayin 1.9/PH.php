@@ -197,7 +197,7 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
          $(".x").append(`
        
        
-         <a href="country.php?id=${i.country}">
+         <a href="PH.php?id=${i.case_no}">
          <div class="call-outs-container">
          <div class="container">
          <div class="row">
@@ -248,7 +248,7 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
                             `
        
        
-       <a href="country.php?id=${i.case_no}">
+       <a href="PH.php?id=${i.case_no}">
        <div class="call-outs-container">
        <div class="container">
        <div class="row">
