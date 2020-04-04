@@ -180,42 +180,7 @@ height: 50px;
 
 
 
-        <a href="country.php?id=${i.country}">
-            <div class="call-outs-container">
-            <div class="container">
-            <div class="row">
-               
-                   <div class="col-sm" style="font-size:200%; font-weight: bolder;">
-                ${i.country}
-               </div>
-               <div class="col-sm-3">
-                <div style="font-size: 150%; font-weight:lighter;color:#e66b6b ">
-                    <table>
-                        <tbody>
-                        <tr>
-                        <td>Date</td>
-                        <td>01-02-2020</td>
-                        <td>Admitted Hospital:</td>
-                        <td>Northern Mindanao Medical Center</td>
-                        </tr>
-                          
-                          
-                          <tr>
-                        <td>Age</td>
-                        <td>34</td>
-                        <td style="padding-left: 30px;">Status:</td>
-                        <td>Recovered</td>
-                        </tr>
-                        </tbody>
-                        </table>
-                   </div>
-                   
-               </div>
-               </div>
-           </div>
-                </div>
-           
-               </a>
+        
 
 
 
@@ -262,76 +227,30 @@ height: 50px;
 
 
 <script>
-/**
+
 $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {      
         data.forEach(function(i){ 
             console.log(i)
          $(".x").append(`
        
-        <a href="country.php?id=${i.case_no}">
-         <div class="call-outs-container">
-         <div class="container">
-         <div class="row">
-            
-                <div class="col-sm" style="font-size:200%; font-weight: bolder;">
-                    ${i.case_no}
-            </div>
-            <div class="col-sm-3" style="padding-right:51px">
-             <div>
-
-                <table border="5" bordercolor="#ff0000">
-<tr>
-<td>Cell A</td>
-<td>Cell B</td>
-<td>Cell C</td>
-</tr>
-</table>
-             
-                </div>
-                
-            </div>
-            </div>
-        </div>
-             </div>
-        
-            </a>`
-     
-         
-
-);
-    });
-    });
-
-    **/ 
-
-
-/**
-    $(document).ready(function(){
-        $('#search').keyup(function(){
-            $('.x').html('');
-            var searchField = $('#search').val();
-            var expression = new RegExp(searchField,"i");
-            $.getJSON("https://corona.lmao.ninja/countries",function(data){
-                $.each(data,function(key,i){
-                    if(i.country.search(expression) !=-1){
-                        $(".x").append(`
-                        
-                        
        
-        <a href="country.php?id=${i.country}">
+         <a href="country.php?id=${i.country}">
          <div class="call-outs-container">
          <div class="container">
          <div class="row">
             
                 <div class="col-sm" style="font-size:200%; font-weight: bolder;">
-             ${i.country}
+             # ${i.case_no}
             </div>
-            <div class="col-sm-3">
-             <div style="font-size: 150%; font-weight:bolder;color:#e66b6b ">
-             ${i.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+            <div class="col-sm-6">
+             <div style="">
+            Date: ${i.date}
                 </div>
                 <div>
-                Total Cases
+                Status: ${i.status}
+                </div>
+                <div>
+                Admitted to: ${i.hospital_admitted_to}
                 </div>
             </div>
             </div>
@@ -339,7 +258,61 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
              </div>
         
             </a>
-                        `);
+       
+       `
+     
+         
+
+);
+    });
+    });
+
+
+
+
+
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            $('.x').html('');
+            var searchField = $('#search').val();
+            var expression = new RegExp(searchField,"i");
+            $.getJSON("https://coronavirus-ph-api.herokuapp.com/cases",function(data){
+                $.each(data,function(key,i){
+                    if(i.case_no.search(expression) !=-1){
+                        $(".x").append(
+                        
+                            `
+       
+       
+       <a href="country.php?id=${i.case_no}">
+       <div class="call-outs-container">
+       <div class="container">
+       <div class="row">
+          
+              <div class="col-sm" style="font-size:200%; font-weight: bolder;">
+           # ${i.case_no}
+          </div>
+          <div class="col-sm-6">
+           <div style="">
+          Date: ${i.date}
+              </div>
+              <div>
+              Status: ${i.status}
+              </div>
+              <div>
+              Admitted to: ${i.hospital_admitted_to}
+              </div>
+          </div>
+          </div>
+      </div>
+           </div>
+      
+          </a>
+     
+     `
+                        
+                        
+                        );
                         
                     }
                 });
@@ -347,7 +320,6 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
         });
     });
 
-**/
 
 
 
