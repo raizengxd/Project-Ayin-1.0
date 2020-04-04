@@ -1,47 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
+
 <head>
-<title>JavaScript - read JSON from URL</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link href="design.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
-<body>
-    <div class="container">
-        <div class="title-name">
-            <p>COVID-19 CASE REPORT</p>
-        </div>
-        <div class="list-country">                
-        </div>        
-    </div>   
-   
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="project-title">Project Title</h1>
+<p>One Paragraph of project description goes here</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+<h3 id="installing">Installing</h3>
+<p>A step by step series of examples that tell you how to get a development env running</p>
+<p>Say what the step will be</p>
+<pre><code>http://localhost/ayin/covid-19/
+</code></pre>
+<h1 id="screenshots">SCREENSHOTS</h1>
+<h2 id="api-used">API used</h2>
+<ul>
+<li><a href="https://corona.lmao.ninja/countries">https://corona.lmao.ninja/countries</a> - The API Use for World</li>
+<li><a href="https://coronavirus-ph-api.herokuapp.com/cases">https://coronavirus-ph-api.herokuapp.com/cases</a> - The API Use for Philippines</li>
+</ul>
+<h2 id="authors">Authors</h2>
+<p>🧑🏻  <a href="https://github.com/raizengxd"><strong>RAIZEN SANGALANG</strong></a></p>
+<h2 id="license">License</h2>
+<pre><code>MIT License
 
-    <script>
-    $.getJSON('https://corona.lmao.ninja/countries', function(data) {      
-        data.forEach(function(i){ 
-         $(".list-country").append(`<div class="card-country">
-            
-            <div class="country-name">
-                ${i.country}    
-                <br><br>            
-            </div>
-            
-            <span class="details-highlight"><b>Cases:</b>${i.cases}<br><br></span>
-            
-            <span class="details-highlight"><b>Today Cases:</b>${i.todayCases}<br><br></span>
-            <span class="details-highlight"><b>Deaths:</b>${i.deaths}<br><br></span>
-            <span class="details-highlight"><b>Today Deaths:</b>${i.todayDeaths}<br><br></span>
-            <span class="details-highlight"><b>Recovered:</b>${i.recovered}<br><br></span>
-            <span class="details-highlight"><b>Active:</b>${i.active}<br><br></span>
-            <span class="details-highlight"><b>Critical:</b>${i.critical}<br><br></span>
-            <span class="details-highlight"> <b>Cases per Million:</b>${i.casesPerOneMillion}<br></span>
-            
-            </div>  
-            <br>`);
-    });
-    });
-    </script>
-    
+Copyright (c) 2020 Raizen Sangalang 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+</div>
 </body>
+
 </html>
