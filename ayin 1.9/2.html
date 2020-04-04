@@ -62,6 +62,10 @@
             
 
         }
+.perCase{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
         
         
     </style>
@@ -106,10 +110,36 @@
 	</div>
 
     <div class="container">
-        <div class="date-time" style="font-weight:bolder; margin-top:10%;"> 
+       <div class="title-world" style="margin-top: 5%; font-size:52pt; font-weight: bolder; text-align: center;">
+            WORLD STATISTICS
+        </div> 
+        <div class="date-time" style="font-weight:bolder; margin-top:3%;"> 
             As of <span id = "demo"></span>
         </div>
        
+
+        <div class="all-data" style="text-align: center;">
+
+            <div class="row perCase">
+                
+                <div class="col" >
+                    <div style="font-size:48pt;">100</div>
+                    TOTAL CASE
+                </div>
+            </div>
+
+            <div class="row perCase">           
+                
+
+                <div class="col" >
+                    <div style="font-size:48pt;">100</div>
+                    AFFECTED COUNTRIES
+                </div>
+            </div>
+
+            
+
+        </div>
         
     </div>
 
@@ -123,11 +153,13 @@
             
 
     <script>
+
         
         var d = new Date();
         document.getElementById("demo").innerHTML = d;
-      
-        
+      /**
+        //{"cases":1098434,"deaths":59160,"recovered":228923,"updated":1585967492240,"active":810351,"affectedCountries":207}
+
         var url= "https://corona.lmao.ninja/all";
     $.getJSON(url, function(i) {      
         
@@ -144,10 +176,10 @@
              </div>
            <div class="col-4" style="padding-top:1%;">
              <div class="data-digit" style="text-align: right; color: #fabd4c;">
-                 ${i.todayCases}
+               
              </div>
              <div class="data-desc" style="text-align: right;">                       
-                 Today Case
+                
              </div>  
              </div>
            
@@ -173,10 +205,10 @@
              </div>
            <div class="data-card col" style="margin-top: 1%;">
             <div class="data-digit" style="color:#8786e6">
-             ${i.todayDeaths}
+             ${i.affectedCountries}
          </div>
          <div class="data-desc">
-             Today Death
+             Affected Countries
          </div> 
          
          
@@ -241,7 +273,7 @@
          
          `);
     
-    });
+    }); **/
 
 
 

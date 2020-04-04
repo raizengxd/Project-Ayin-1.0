@@ -130,7 +130,7 @@ height: 50px;
                 </li>
                 <li class="nav-item active">
                   
-                  <a class="nav-link" href="list.php" >
+                  <a class="nav-link" href="#" >
                     <i class="fa fa-search" style="color: white;"></i>
                     Search Country<span class="sr-only">(current)</span></a>
                 </li>
