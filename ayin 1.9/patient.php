@@ -132,72 +132,94 @@ var url_pass ="<?php echo $_GET['id']; ?>";
              </div>
            <div class="col-4" style="padding-top:1%;">
              <div class="data-digit" style="text-align: right; color: #fabd4c; font-size:3vh">
-                 ${data.date}
+                 ${data.status}
              </div>
              <div class="data-desc" style="text-align: right;">                       
-                 Confirmed Date
+                 Status
              </div>  
              </div>
            
          </div>
+        
+         
+         <div class="row" style="margin-top: 1%;">
+             <div class="data-card col" >
+                 <div class="data-digit" style="color:#03a9f4">
+                    ${data.date}
+                    </div>
+                 <div class="data-desc">
+                     Confirmed Date
+                 </div> 
+             </div>
+             
+           </div>
+
+
+
          <div class="row" style="margin-top: 1%;">
            <div class="data-card col" style=  "margin-right:1%; margin-top: 1%;" >
              <div class="data-digit" style="color: #fabd4c;">
-               dfd
+               ${data.gender}
              </div>
              <div class="data-desc" >
-                 Total Case
+                 Gender
              </div>    
-         </div>
+         </div>       
+        
            <div class="data-card col" style="margin-right:1%;margin-top: 1%; " >
              
-             <div class="data-digit" style="color:#8786e6" >
-                 fdf
+             <div class="data-digit" style="color:#fabd4c;" >
+                 ${data.age}
              </div>
              <div class="data-desc">
-                 Total of Death
+                 Age
              </div> 
              
              </div>
            <div class="data-card col" style="margin-top: 1%;">
-            <div class="data-digit" style="color:#8786e6">
-             dfd
+            <div class="data-digit" style="color:#fabd4c;">
+             ${data.nationality}
          </div>
          <div class="data-desc">
-             Today Death
+             Nationality
          </div> 
          
          
          </div>
            
          </div>
+
+        
+
          <div class="row" style="margin-top: 1%;">
              <div class="data-card col" style=  "margin-right:1%" >
                  <div class="data-digit">
-                   f
+                   ${data.travel_history}
                  </div>
                  <div class="data-desc">
-                     Active Case
+                     Travel History
                  </div> 
              </div>
              <div class="data-card col" >
                  <div class="data-digit" >
-                    f
+                    ${data.resident_of}
                  </div>
                  <div class="data-desc">
-                     Critical Case
+                     Residency
                  </div> 
              </div>
              
            </div>
+
+           
            
            <div class="row" style="margin-top: 1%;">
              <div class="data-card col" >
                  <div class="data-digit" style="color:#6be771">
-                    ffd
+                    ${data.hospital_admitted_to}
                     </div>
                  <div class="data-desc">
-                     Number of Recovered
+                     HOSPITAL ADMITTED
                  </div> 
              </div>
              

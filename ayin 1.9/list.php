@@ -176,6 +176,8 @@ height: 50px;
     </div>   
     </div>
     </div>
+        
+
     <div class="x">
     
     </div>
@@ -214,15 +216,15 @@ $.getJSON('https://corona.lmao.ninja/countries', function(data) {
         </div>
              </div>
         
-            </a>`
-     
-         
+            </a>`              
+              
 
-);
-    });
-    });
+            );
+            console.log("DOONEEE!!!! ")
+        });
+        });
 
-    $(document).ready(function(){
+     $(document).ready(function(){
         $('#search').keyup(function(){
             $('.x').html('');
             var searchField = $('#search').val();

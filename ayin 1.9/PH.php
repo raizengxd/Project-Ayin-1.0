@@ -175,7 +175,14 @@ height: 50px;
             <input type="text" id="search" style="font-size:150%; background-color: #363232; height:45px; border: none; padding-left: 5%; width: 80%;" placeholder="Search Country">
     </div>   
     </div>
+    <div style="text-align:center; padding-top:50px;"  >
+    <div id ="whatever" class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
+</div>
+   
+
     <div class="x">
 
 
@@ -228,6 +235,8 @@ $.getJSON('https://coronavirus-ph-api.herokuapp.com/cases', function(data) {
 
 );
     });
+    
+    document.getElementById("whatever").className = "A";
     });
 
 
